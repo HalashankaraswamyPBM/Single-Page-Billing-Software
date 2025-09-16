@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Billing Software</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Billing Software - SHIVA Jewellers</h1>
+    <form id="billForm">
+        <input type="text" id="customerName" placeholder="Customer Name" required>
+        <input type="text" id="itemName" placeholder="Item Name" required>
+        <input type="number" id="quantity" placeholder="Quantity" required>
+        <input type="number" id="price" placeholder="Price" step="0.01" required>
+        <button type="submit">Add Bill</button>
+    </form>
+
+    <h2>All Bills</h2>
+    <table id="billTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Customer</th>
+                <th>Item</th>
+                <th>Qty</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
